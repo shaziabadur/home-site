@@ -1,24 +1,9 @@
-import logo from './logo.svg';
 import './App.css';
+import MuiCard from './components/MuiCard';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <MuiCard name='Shazia Badur' email='shazbadur@gmail.com' githubURL='github/shaziabadur' />
   );
 }
 
