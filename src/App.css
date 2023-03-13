@@ -1,5 +1,4 @@
-* {
-}
+
 .center {
   position: absolute;
   left: 25%;
@@ -20,7 +19,14 @@
   color: cadetblue;
   text-align: center;
 }
+
 a {
   color:inherit;
   text-decoration: none;
+}
+
+.first-last-name {
+  font-size: larger;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
