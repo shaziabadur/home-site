@@ -20,24 +20,19 @@ const MuiCard = ({name, email, githubURL, linkedInURL}) => {
           <Typography className='first-last-name' variant='body3' component='div'>
             {name}
           </Typography>
+
+          {/* Github LinkedIn*/}
+          <Typography className='icons' variant='body3' component='div'>
+            <a href="https://github.com/shaziabadur" target="_blank"><GitHubIcon></GitHubIcon></a>
+            <a href="https://linkedin.com/in/shazia-badur" target="_blank"><LinkedInIcon></LinkedInIcon></a>
+          </Typography>     
           
           {/* Email */}
-          <Typography variant='body3' component='div'>
+          <Typography variant='body1' component='div'>
             <IconButton onClick={()=>handleCopy(email)}><ContentCopyIcon fontSize='small'></ContentCopyIcon></IconButton>
             {email}
-          </Typography>
-
-          {/* Github */}
-          <Typography variant='body3' component='div'>
-            <IconButton><GitHubIcon></GitHubIcon></IconButton>
-            <a href="https://github.com/shaziabadur" target="_blank">{githubURL}</a>
-          </Typography>
-
-          {/* LinkedIn */}
-          <Typography>
-            <IconButton><LinkedInIcon></LinkedInIcon></IconButton>
-            <a href="https://linkedin.com/in/shazia-badur" target="_blank">{linkedInURL}</a>
-          </Typography>
+          </Typography>  
+            
         </CardContent>      
       </Card>
     </Box>
