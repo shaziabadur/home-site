@@ -14,26 +14,24 @@ const MuiCard = ({name, email, githubURL, linkedInURL}) => {
   return (
     <Box className='center'>
       <Card className='center'>
-        <CardContent className='name'>
 
-          {/* Name */}
-          <Typography className='first-last-name' variant='body3' component='div'>
-            {name}
-          </Typography>
+          <CardContent className='name'>
+            {/* Name */}
+            <Typography className='first-last-name' variant='body3' component='div'>
+              {name}
+            </Typography>
 
-          {/* Github LinkedIn*/}
-          <Typography className='icons' variant='body3' component='div'>
-            <a href="https://github.com/shaziabadur" target="_blank"><GitHubIcon></GitHubIcon></a>
-            <a href="https://linkedin.com/in/shazia-badur" target="_blank"><LinkedInIcon></LinkedInIcon></a>
-          </Typography>     
-          
-          {/* Email */}
-          <Typography variant='body1' component='div'>
-            <IconButton onClick={()=>handleCopy(email)}><ContentCopyIcon fontSize='small'></ContentCopyIcon></IconButton>
-            {email}
-          </Typography>  
-            
-        </CardContent>      
+            {/* Email */}
+            <IconButton className='name' onClick={()=> handleCopy(email)}><ContentCopyIcon onClick={()=> handleCopy(email)} fontSize='smaller'></ContentCopyIcon></IconButton>
+              {email}
+
+            {/* Github LinkedIn*/}
+            <Typography className='links' variant='body3' component='div'>
+              <a href="https://github.com/shaziabadur" target="_blank"><GitHubIcon fontSize='large'></GitHubIcon></a>
+              <a href="https://linkedin.com/in/shazia-badur" target="_blank"><LinkedInIcon fontSize='large'></LinkedInIcon></a>
+            </Typography>
+        
+        </CardContent>     
       </Card>
     </Box>
   )

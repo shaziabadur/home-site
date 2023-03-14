@@ -1,15 +1,15 @@
-
+* {
+  font-family: 'Courier New', monospace;
+}
 
 .center {
-  position: absolute;
-  left: 25%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -125px;
   color: cadetblue;
-  width: 50%;
-  height:50%;
-  bottom: 25%;
-  min-width: fit-content;
-  min-height: fit-content;
-padding-inline: 1rem;
+  font-family: 'Courier New', monospace;
 }
 
 .App {
@@ -21,19 +21,12 @@ padding-inline: 1rem;
   color: cadetblue;
   text-align: center;
 }
-
 a {
   color:inherit;
   text-decoration: none;
-  padding-left:.5rem;
 }
 
 .first-last-name {
-  font-size:xx-large;
-  padding-top: 1.5rem;
+  font-size: larger;
   padding-bottom: 1.5rem;
-}
-
-.icons {
-  padding: 1.5rem;
 }
