@@ -3,6 +3,7 @@ import { Box, Card, CardContent, Typography, IconButton, Icon } from '@mui/mater
 import ContentCopyIcon from '@mui/icons-material/ContentCopy';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import { Link } from "react-router-dom";
 
 const MuiCard = ({name, email, githubURL, linkedInURL}) => {
 
@@ -12,8 +13,9 @@ const MuiCard = ({name, email, githubURL, linkedInURL}) => {
   }
 
   return (
-    <Box className='center'>
-      <Card className='center'>
+    <>
+    <Box className='center' >
+      <Card >
 
           <CardContent className='name'>
             {/* Name */}
@@ -30,10 +32,12 @@ const MuiCard = ({name, email, githubURL, linkedInURL}) => {
               <a href="https://github.com/shaziabadur" target="_blank"><GitHubIcon fontSize='large'></GitHubIcon></a>
               <a href="https://linkedin.com/in/shazia-badur" target="_blank"><LinkedInIcon fontSize='large'></LinkedInIcon></a>
             </Typography>
-        
         </CardContent>     
       </Card>
-    </Box>
+      <Link className='centerbottom' to="/portfolios">View my personal projects here</Link>
+
+    </Box>    
+    </>
   )
 }
 

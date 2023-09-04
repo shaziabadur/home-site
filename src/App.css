@@ -3,22 +3,23 @@
 }
 
 .center {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  margin-top: -100px;
-  margin-left: -125px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
   color: cadetblue;
   font-family: 'Courier New', monospace;
 }
 
-.App {
-  text-align: center;
-  color: cadetblue;
+.centerbottom {
+  color:black;
+  font-family: 'Courier New', monospace;
+  padding-top: 10px;;
 }
 
 .name {
-  color: cadetblue;
+  color: black;
   text-align: center;
 }
 a {
@@ -28,5 +29,5 @@ a {
 
 .first-last-name {
   font-size: larger;
-  padding-bottom: 1.5rem;
 }
+
