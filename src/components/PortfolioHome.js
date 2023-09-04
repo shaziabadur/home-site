@@ -1,6 +1,5 @@
 import React from "react";
 import './PortfolioHome.css';
-import { Box, Card, CardContent, Typography, IconButton, Icon } from '@mui/material';
 
 const PortfolioHome = () => {
     return(

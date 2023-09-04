@@ -2,7 +2,7 @@ import './App.css';
 import MuiCard from './components/MuiCard';
 import PortfolioHome from './components/PortfolioHome';
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Routes,
   Route,
 } from "react-router-dom";
